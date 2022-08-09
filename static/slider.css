@@ -1,0 +1,50 @@
+
+
+.contain-slider{
+    display: flex;
+    overflow: hidden;
+    margin: 50px auto;
+    background-color: white;
+    width: 70%;
+    max-height: 100%;
+    min-height: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    
+  }
+  
+.slider { overflow: visible; } /* las imágenes no van a salir del márgen de la pantalla*/
+.slider figure img {
+    width: 1800px;
+  height: 600px;
+object-fit: cover;
+object-position: 50% 50%;
+    
+}
+img { object-fit: cover; }
+
+.slider figure { 
+  position: relative;
+ 
+  width: 500%;
+  margin: 0;
+  left: auto;
+  text-align: center;
+  
+  font-size: 0;
+  animation: 20s slidy infinite; /*el movimiento se va a mantener de forma indefinida -infinito-*/
+}
+
+
+/*esta parte del código define el movimiento de las imágenes a la izquierda*/
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
