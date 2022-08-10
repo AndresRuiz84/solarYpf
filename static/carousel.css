@@ -71,7 +71,7 @@
     transition: 0.2s;
   }
   .card .bottom-text .btn a:hover{
-    transform: scale(0.9);
+    transform: scale(1.1);
   }
   @media screen and (max-width: 1225px) {
     .carousel{
