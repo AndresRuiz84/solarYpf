@@ -1,36 +1,39 @@
 
-
 .contain-slider{
     display: flex;
     overflow: hidden;
-    margin: 50px auto;
-    background-color: white;
-    width: 70%;
-    max-height: 100%;
-    min-height: 50%;
+    margin: 40px auto;
+    width: 90%;
+    height:  50%;
+    max-width: max-content;
+    min-width: min-content;
+    
+    
+    border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
+    justify-content: center;
     
   }
   
-.slider { overflow: visible; } /* las imágenes no van a salir del márgen de la pantalla*/
-.slider figure img {
-    width: 1800px;
-  height: 600px;
-object-fit: cover;
-object-position: 50% 50%;
-    
+.slider { 
+    overflow: hidden;
+   
+} /* las imágenes no van a salir del márgen de la pantalla*/
+.slider figure img{
+   
+  width: 400%;
+  object-position: 50% 50%;
+  list-style: none;
 }
-img { object-fit: cover; }
+
 
 .slider figure { 
   position: relative;
- 
-  width: 500%;
-  margin: 0;
-  left: auto;
+  display: flex;
+  width: 100%;
+  height: 100%;
   text-align: center;
-  
   font-size: 0;
   animation: 20s slidy infinite; /*el movimiento se va a mantener de forma indefinida -infinito-*/
 }
@@ -38,13 +41,53 @@ img { object-fit: cover; }
 
 /*esta parte del código define el movimiento de las imágenes a la izquierda*/
 @keyframes slidy {
-0% { left: 0%; }
-20% { left: 0%; }
-25% { left: -100%; }
-45% { left: -100%; }
-50% { left: -200%; }
-70% { left: -200%; }
-75% { left: -300%; }
-95% { left: -300%; }
-100% { left: -400%; }
+  0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
 }
+
+/*.slider-frame {
+	width: 1280px;
+    height: auto;
+	margin:50px auto 0;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}*/
