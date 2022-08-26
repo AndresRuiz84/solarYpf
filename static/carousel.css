@@ -43,7 +43,7 @@
     line-height: 20px;
   }
   .card .bottom-text{
-    padding: 0 20px 10px 20px;
+    padding: 10px 20px 10px 20px;
     margin-top: 5px;
     background: white;
     opacity: 0;
@@ -59,7 +59,7 @@
   }
   .card .bottom-text .btn{
     margin: 10px 0;
-    text-align: left;
+    text-align: left ;
   }
   .card .bottom-text .btn a{
     text-decoration: none;
