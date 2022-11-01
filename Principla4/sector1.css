@@ -1,0 +1,7 @@
+.sector1{ 
+ 
+    background-color: #008d36; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, #008d36, #95c11f);   
+    height: 1150px;
+    width: 100%;
+   }
